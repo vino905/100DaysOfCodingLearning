@@ -27,15 +27,15 @@ class GFG
 
 class Solution{
     static int evenlyDivides(int N){
-        int cnt=0;
-        int temp=N;
+        int res =0;
+        int temp = N;
         while(temp>0){
             int rem = temp%10;
             if(rem!=0 && N%rem==0){
-                cnt+=1;
+                res++;
             }
-            temp=temp/10;
+            temp = temp/10;
         }
-        return cnt;
+        return res;
     }
 }
